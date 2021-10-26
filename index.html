@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Covid-data</title>
+</head>
+
+<body>
+    <div class="header_covid">
+        <h1 class="title_covid">Số liệu covid theo tỉnh mới nhất </h1>
+        <h2 class="time_covid">Updated at: <span id="update_time"></span></h2>
+    </div>
+    
+    <div class="general">
+        <div class="box box_1">
+            <h3>Số ca nhiễm</h3>
+            <div id="confirmed"></div>
+            <div class="case_note">
+                <i class="fas fa-arrow-up"></i>
+                <span id="plus_confirmed"></span>
+            </div>
+        </div>
+        <div class="box box_2">
+            <h3>Đang điều trị</h3>
+            <div id="treated"></div>
+            <div class="case_note case_treated">
+                <i class="fas fa-arrow-up"></i>
+                <span id="plus_treated"></span>
+            </div>
+        </div>
+        <div class="box box_3">
+            <h3>Đã khỏi bệnh</h3>
+            <div id="recovered"></div>
+            <div class="case_note case_recovered">
+                <i class="fas fa-arrow-up"></i>
+                <span id="plus_recovered"></span>
+            </div>
+        </div>
+        <div class="box box_4">
+            <h3>Tử vong</h3>
+            <div id="death"></div>
+            <div class="case_note case_death">
+                <i class="fas fa-arrow-up"></i>
+                <span id="plus_death"></span>
+            </div>
+        </div>
+    </div>
+    <div id="searhBar">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm theo tên thành phố/tỉnh..."
+            title="Type in a city/province" />
+    </div>
+    <div id="covid_data">
+        <table id="covid_data_table">
+            <thead>
+                <tr id="covid_data_head">
+
+                    <th>
+                        Tỉnh thành
+                    </th>
+                    <th>
+                        Ca nhiễm lũy kế
+                    </th>
+                    <th>
+                        Ca nhiễm hôm nay
+                    </th>
+                    <th>
+                        Tử vong hôm nay
+                    </th>
+                    <th>
+                        Cấp độ
+                    </th>
+                    <th>
+                        Mũi 1
+                    </th>
+                    <th>
+                        Mũi 2
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody id="covid_data_body"></tbody>
+        </table>
+    </div>
+    
+    <h1 id="covid_by_day">Thống kê cả nước theo ngày</h1>
+    <div class="data_detail_all">
+        <table id="covid_data_table_all">
+          <thead>
+            <tr id="covid_data_head_all">
+              <th >
+                Ngày thống kê 
+              </th>
+              <th >
+                Ca nhiễm theo ngày 
+              </th>
+              <th >
+                Hồi phục theo ngày
+                
+              </th>
+              <th >
+                Tử vong theo ngày 
+              </th>
+            </tr>
+          </thead>
+          <tbody id="covid_data_body_all"></tbody>
+        </table>
+      </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

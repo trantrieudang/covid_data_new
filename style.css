@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+}
+/* .header_covid{
+    background-image: url("assets/img/covid.jpg");
+    
+    height: 200px;
+  
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+} */
+.title_covid{
+    justify-content: center;
+}
+.time_covid{
+    justify-content: center;
+    text-align: center;
+    color: navy;
+    font-weight: bold;
+}
+.general{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.box {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    flex-grow: 1;
+    background-color: honeydew;
+    text-align: center;
+}
+h3{
+    padding: 8px;
+}
+#confirmed{
+    padding: 8px;
+    color: #ff3261;
+    font-weight: bold;
+    
+}
+.fas{
+    color: red;
+    padding: 2px;
+}
+#treated{
+    padding: 8px;
+    color: #ffcf4f;
+    font-weight: bold;
+}
+#recovered{
+    padding: 8px;
+    color: #72d556;
+    font-weight: bold;
+}
+#death{
+    padding: 8px;
+    color: black;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+#covid_data{
+    margin: 0 auto;
+}
+#data_detail_all{
+    margin: 0 auto;
+}
+#covid_data_table {
+  
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  #covid_data_table td,
+#covid_data_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#covid_data_table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #covid_data_table_hcm tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  #covid_data_table th {
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+  }
+#searhBar{
+    margin: 0 auto;
+}
+  #myInput {
+ 
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid rgba(116, 255, 169, 0.2);
+    border-radius: 5px;
+    margin-bottom: 12px;
+    box-shadow: rgba(255, 223, 223, 0.884) 0px 3px 8px;
+  }
+  
+  #myInput:focus {
+    transition: all 0.5s;
+    box-shadow: rgb(116, 255, 169) 0px 3px 16px;
+    outline: none;
+  }
+
+  #covid_data_table_all {
+  
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  #covid_data_table_all td,
+#covid_data_table_all th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#covid_data_table_all tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  #covid_data_table_all tr:hover {
+    background-color: #ddd;
+  }
+  #covid_data_table_all th {
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  @media only screen and (max-width: 419px) {
+    h1{
+        font-size: 16px;
+    }
+    .time_covid{
+        font-size: 14px;
+        
+    }
+    #myInput {
+ 
+        
+        font-size: 14px;
+        font-weight: 600;
+        
+      }
+    #covid_data_table {
+      font-size: 10px;
+      font-weight: 600;
+    }
+  
+    
+    #covid_data_table_all {
+      font-size: 13px;
+      font-weight: 600;
+    }
+ 
+h3{
+    font-size: 13px;
+}
+    
+  }
+  @media only screen and (max-width: 321px) {
+    #covid_data_table {
+      font-size: 9px;
+      font-weight: 600;
+    }
+    #myInput {
+ 
+        
+        font-size: 8px;
+        font-weight: 600;
+        
+      }
+    #covid_data_table_all {
+      font-size: 9px;
+      font-weight: 600;
+    }
+  
+    
+    
+  }
