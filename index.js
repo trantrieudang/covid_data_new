@@ -49,9 +49,7 @@ fetch("https://emag.thanhnien.vn/covid19/home/getAllPatientProvinces", {
                 <td >
                     ${element.incconfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                 </td>
-                <td >
-                    ${element.deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                </td>
+                
                 <td>
                     ${element.clslevel}
                 </td>
