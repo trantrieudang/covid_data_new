@@ -8,7 +8,7 @@ fetch("https://emag.thanhnien.vn/covid19/home/getSummPatient", {
         
         console.log(data.data);
         
-        document.getElementById("update_time").innerHTML = new Date(data.data.ModifiedDate ).toLocaleString(
+        document.getElementById("update_time").innerHTML = new Date(data.data.CreatedDate ).toLocaleString(
             "vi-VN"
           )
         document.getElementById("confirmed").innerHTML = data.data.Confirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
