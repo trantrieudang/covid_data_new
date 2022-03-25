@@ -75,7 +75,7 @@ h1{
 #covid_data{
     margin: 15px 15px;
 }
-#data_detail_all{
+.data_detail_all{
     margin: 15px 15px;
 }
 #covid_data_table {
