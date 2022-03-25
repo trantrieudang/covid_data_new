@@ -28,7 +28,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .box {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -72,10 +73,10 @@ h1{
     font-weight: bold;
 }
 #covid_data{
-    margin: 0 auto;
+    margin: 15px auto;
 }
 #data_detail_all{
-    margin: 0 auto;
+    margin: 15px auto;
 }
 #covid_data_table {
   
