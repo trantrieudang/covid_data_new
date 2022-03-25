@@ -110,14 +110,14 @@ h1{
   }
 #searhBar{
     margin: 0 auto;
-    width: 100%
+    width: 65%
 }
   #myInput {
     margin: 20px auto;
     background-position: 10px 10px;
     background-repeat: no-repeat;
     width: 100%;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 600;
     padding: 10px 15px;
     border: 1px solid rgba(116, 255, 169, 0.2);
