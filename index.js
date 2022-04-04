@@ -50,15 +50,8 @@ fetch("https://emag.thanhnien.vn/covid19/home/getAllPatientProvinces", {
                     ${element.incconfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                 </td>
                 
-                <td>
-                    ${element.clslevel}
-                </td>
-                <td >
-                    ${element.onevaccine.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                </td>
-                <td >
-                ${element.donevaccine.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-            </td>
+                
+     
             </tr>
           `;
     
