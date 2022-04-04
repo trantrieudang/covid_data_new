@@ -92,9 +92,7 @@ fetch("https://emag.thanhnien.vn/covid19/home/getAllPatientProvinces", {
                 <td > 
                 ${element.recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             </td>
-            <td > 
-            ${element.death.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-        </td>
+            
                 </tr>
             `;
             document.getElementById("covid_data_body_all").innerHTML += y;
